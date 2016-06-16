@@ -1,11 +1,10 @@
 JSEN 
 
-*Forked from [JSON-Schema](https://github.com/bugventure/jsen)*
+*Forked from [JSEN](https://github.com/bugventure/jsen)*
 
 Differences from fork:
  - `.build()` options take precendence over schema configuration
- 
-=================
+
 
 [![Build][travis-img]][travis-url] [![Coverage][coveralls-img]][coveralls-url]
 
@@ -575,7 +574,7 @@ MIT
 
 [travis-url]: https://travis-ci.org/adam-26/jsen
 [travis-img]: https://travis-ci.org/adam-26/jsen.svg?branch=fork
-[coveralls-img]: https://img.shields.io/coveralls/adam-26/jsen.svg
-[coveralls-url]: https://coveralls.io/r/adam-26/jsen
+[coveralls-img]: https://coveralls.io/repos/github/adam-26/jsen/badge.svg?branch=fork
+[coveralls-url]: https://coveralls.io/github/adam-26/jsen?branch=fork
 [istanbul]: https://www.npmjs.org/package/istanbul
 [mocha]: http://mochajs.org/
