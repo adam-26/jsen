@@ -1,14 +1,13 @@
 {
-  "name": "jsen",
-  "version": "0.6.1",
+  "name": "@adam-26/jsen",
   "description": "JSON-Schema validator built for speed",
   "author": "Veli Pehlivanov <bugventure@gmail.com>",
-  "homepage": "https://github.com/bugventure/jsen",
+  "homepage": "https://github.com/adam-26/jsen",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bugventure/jsen.git"
+    "url": "https://github.com/adam-26/jsen.git"
   },
-  "bugs": "https://github.com/bugventure/jsen/issues",
+  "bugs": "https://github.com/adam-26/jsen/issues",
   "keywords": [
     "JSON",
     "schema",
@@ -20,14 +19,22 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha",
     "build": "cat ./lib/header > ./dist/jsen.js && ./node_modules/.bin/browserify index.js -s jsen >> ./dist/jsen.js && ./node_modules/.bin/uglify -s ./dist/jsen.js -o ./dist/jsen.min.temp && cp ./lib/header ./dist/jsen.min.js && cat ./dist/jsen.min.temp >> ./dist/jsen.min.js && rm ./dist/jsen.min.temp",
-    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf ./coverage"
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls && rm -rf ./coverage",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "browserify": "10.x",
     "coveralls": "2.x",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
     "istanbul": "0.x",
     "json-schema-test-suite": "0.0.10",
     "mocha": "1.x",
-    "uglify": "0.x"
+    "uglify": "0.x",
+    "semantic-release": "^4.3.5"
   }
 }
