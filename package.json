@@ -34,8 +34,9 @@
     "istanbul": "0.x",
     "json-schema-test-suite": "0.0.10",
     "mocha": "1.x",
-    "uglify": "0.x",
-    "semantic-release": "^4.3.5"
+    "mocha-lcov-reporter": "^1.2.0",
+    "semantic-release": "^4.3.5",
+    "uglify": "0.x"
   },
   "release": {
     "branch": "fork"

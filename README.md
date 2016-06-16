@@ -1,4 +1,10 @@
 JSEN 
+
+*Forked from [JSON-Schema](https://github.com/bugventure/jsen)*
+
+Differences from fork:
+ - `.build()` options take precendence over schema configuration
+ 
 =================
 
 [![Build][travis-img]][travis-url] [![Coverage][coveralls-img]][coveralls-url]
@@ -36,7 +42,7 @@ jsen (JSON Sentinel) validates your JSON objects using [JSON-Schema](http://json
 Install through NPM in node.
 
 ```bash
-$ npm install jsen --save
+$ npm install @adam-26/jsen --save
 ```
 
 ```javascript
@@ -46,6 +52,8 @@ var valid = validate('some value');             // true
 ```
 
 Install through Bower in your HTML page.
+
+#NOTE: Fork does not support BOWER
 
 ```bash
 $ bower install jsen
