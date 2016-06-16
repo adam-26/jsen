@@ -1,9 +1,7 @@
 JSEN 
 =================
 
-[![Build][travis-img]][travis-url] [![Coverage][coveralls-img]][coveralls-url] [![Downloads][downloads-img]][npm-url]
-
-[![NPM][npm-img]][npm-url]
+[![Build][travis-img]][travis-url] [![Coverage][coveralls-img]][coveralls-url]
 
 jsen (JSON Sentinel) validates your JSON objects using [JSON-Schema](http://json-schema.org/documentation.html).
 
@@ -567,12 +565,9 @@ Read [changelog.md](changelog.md)
 
 MIT 
 
-[travis-url]: https://travis-ci.org/bugventure/jsen
-[travis-img]: https://travis-ci.org/bugventure/jsen.svg?branch=master
-[npm-url]: https://www.npmjs.org/package/jsen
-[npm-img]: https://nodei.co/npm/jsen.png?downloads=true
-[downloads-img]: http://img.shields.io/npm/dm/jsen.svg
-[coveralls-img]: https://img.shields.io/coveralls/bugventure/jsen.svg
-[coveralls-url]: https://coveralls.io/r/bugventure/jsen
+[travis-url]: https://travis-ci.org/adam-26/jsen
+[travis-img]: https://travis-ci.org/adam-26/jsen.svg?branch=fork
+[coveralls-img]: https://img.shields.io/coveralls/adam-26/jsen.svg
+[coveralls-url]: https://coveralls.io/r/adam-26/jsen
 [istanbul]: https://www.npmjs.org/package/istanbul
 [mocha]: http://mochajs.org/
