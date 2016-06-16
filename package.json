@@ -36,5 +36,8 @@
     "mocha": "1.x",
     "uglify": "0.x",
     "semantic-release": "^4.3.5"
+  },
+  "release": {
+    "branch": "fork"
   }
 }
